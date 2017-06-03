@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: client1
+  cloud:
+    config:
+      profile: profile1
+      uri: http://localhost:8889/
+management:
+  security:
+    enabled: false
+
+#优先级从高到低
+#/{appname}/{profile}[/{label}]
+#/{appname}-{profile}.yml
+#/{label}/{appname}-{profile}.yml
+#/{appname}-{profile}.properties
+#/{label}/{appname}-{profile}.properties

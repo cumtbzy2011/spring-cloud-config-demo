@@ -1,0 +1,15 @@
+spring:
+  config:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cumtbzy2011/spring-cloud-config-server/
+          username: cumtbzy2011
+          password: bianzhaoyu1
+          search-paths: my-repo/test-repo-1
+server:
+  port: 8889
+
+#可以直接在浏览器访问localhost:8889/client1-profile1.yml
